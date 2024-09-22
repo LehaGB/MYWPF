@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.35026.282
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trash", "Trash\Trash.csproj", "{03754CE7-98F9-4437-A794-ABB688D1A542}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XML", "XML", "{46CF7623-AEB1-435A-B215-58FAABFD76E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XML", "XML\XML.csproj", "{F0F560C1-21FA-41DF-8402-816510BC25A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WPF", "WPF", "{4B04F388-645E-4B1A-918B-683B7C0A0A8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWpf", "WPF\MyWpf\MyWpf.csproj", "{7BC73D48-565B-4EE2-8648-D015CE584EE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03754CE7-98F9-4437-A794-ABB688D1A542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03754CE7-98F9-4437-A794-ABB688D1A542}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03754CE7-98F9-4437-A794-ABB688D1A542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03754CE7-98F9-4437-A794-ABB688D1A542}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0F560C1-21FA-41DF-8402-816510BC25A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0F560C1-21FA-41DF-8402-816510BC25A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0F560C1-21FA-41DF-8402-816510BC25A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0F560C1-21FA-41DF-8402-816510BC25A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BC73D48-565B-4EE2-8648-D015CE584EE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BC73D48-565B-4EE2-8648-D015CE584EE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BC73D48-565B-4EE2-8648-D015CE584EE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BC73D48-565B-4EE2-8648-D015CE584EE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F0F560C1-21FA-41DF-8402-816510BC25A3} = {46CF7623-AEB1-435A-B215-58FAABFD76E9}
+		{7BC73D48-565B-4EE2-8648-D015CE584EE4} = {4B04F388-645E-4B1A-918B-683B7C0A0A8F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F07D071A-9CE0-44E9-8DF6-4BAEDBD35DF5}
+	EndGlobalSection
+EndGlobal
