@@ -1,0 +1,94 @@
+﻿<Window x:Class="Example4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Example4"
+        mc:Ignorable="d"
+        Title="Магический 8 ball" Height="350" Width="525">
+    
+    <!--ОбЪект Grid определет гибкую область сетки, состоящю из столбцов и строк-->
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="324*"/>
+            <ColumnDefinition Width="193*"/>
+        </Grid.ColumnDefinitions>
+        
+        <!--
+            RowDefinitions - Коллекция, которая определяет
+            строки для отображения RowDefinitions
+        -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="100*"/>
+        </Grid.RowDefinitions>
+        
+        <!--Используем сложную кисть для заливки фона градиентом
+            Добавляем для этого дескриптор - BackGround
+        -->
+        <Grid.Background>
+            
+            <!--
+                LinearGradientDrush - заполняет область линейным градиентом.
+                Линейный градиент определяет градиент вдоль прямой линии.
+                Конечные точки линии определяется свойствами StartPoint и EndPoint
+                линейного градиента.
+                Кисть LinearGradientDrush рисует свои GradientStops вдоль этой линии.
+            -->
+
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <!--Коллекция свойств GradientStops-->
+                <LinearGradientBrush.GradientStops>
+                    <!-- GradientStop имеет свойства:
+                         Offset - задает позицию цвета.
+                        Color - задает цвет.
+                    -->
+                    <GradientStop Offset="1" Color="#FFEEEEEE"/>
+                    <GradientStop Offset="0.299" Color="#FFA22B2B"/>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <TextBox x:Name="txtQuestion"
+                 HorizontalAlignment="Stretch"
+                 VerticalAlignment="Stretch"
+                 Margin="10"
+                 TextWrapping="Wrap"
+                 FontFamily="Verdana"
+                 FontSize="20"
+                 Grid.Row="0"
+                 Foreground="#FF646464"
+                 Text="[Введите свой вопрос]" Grid.ColumnSpan="2"
+        />
+        
+        <!--
+            isDefault - Получает или задает значение, указывающее, является ли Button
+            кнопкой по умолчанию.
+        -->
+
+        <Button HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                Margin="10 0 0 0"
+                Padding="5"
+                Grid.Row="1"
+                Content="Ответ на вопрос"
+                Click="Answer_Click"
+                IsDefault="True"
+        />
+
+        <TextBox x:Name="txtAnswer"
+                 HorizontalAlignment="Stretch"
+                 VerticalAlignment="Stretch"
+                 Margin="10"
+                 TextWrapping="Wrap"
+                 FontFamily="Verdana"
+                 FontSize="20"
+                 IsReadOnly="True"
+                 Grid.Row="2"
+                 Foreground="#FF009BFF"
+                 Text="[Ответ появится здесь.]" Grid.ColumnSpan="2"
+        />
+    </Grid>
+</Window>
